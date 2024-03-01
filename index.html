@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <Header class="header">
+        <img src="images/logo.png" alt="Logo du site" class="logo">
+        <nav class="nav-link">
+            <ul class="nav-list">
+                <li><a href="#" class="main-nav-link">Acceuil</a></li>
+                <li><a href="pages/apropos.html" class="main-nav-link">A propos</a></li>
+                <li><a href="#" class="main-nav-link">Tarifs</a></li>
+                <li><a href="#" class="main-nav-link">Portfolio</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <section class="hero-section">
+        <div class="hero container grid grid--2-cols">
+            <div class="hero-text-box">
+                <h1 class="heading-primary">Robbie Lens Photographie</h1>
+                <p class="hero-text">Ou professionnalisme s'allie avec passion. Depuis plus de 5 ans maintenant,
+                    j'exerce mon métier avec la passion qui m'anime: capturer l'essence de chaque instant
+                </p>
+                <a href="#" class="btn">un projet ? écrivez-moi</a>
+            </div>
+            <div class="hero-img-box">
+                <img src="images/robbie-lens.png" alt="hero image" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <h2 class="heading-secondary">Mon dernier projet</h2>
+        <div class="gallery container grid grid--3-cols">
+            <figure class="gallery-item">
+                <img src="images/accueil/element-1.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/accueil/element-2.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/accueil/element-3.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/accueil/element-4.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/accueil/element-5.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item">
+                <img src="images/accueil/element-6.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+        </div>
+        <div class="gallery-btn">
+            <a href="#" class="btn">voir mon portfolio</a>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2 class="heading-secondary cta-heading">Parlons de projet</h2>
+        <div class="form-cta">
+            <div class="form-flex">
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="form-btn">
+            <a href="#" class="btn">envoyer</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="images/logo.png" alt="Logo du site" class="logo">
+        <div class="social">
+            <img src="images/instagram.png" alt="logo de instagram">
+            <img src="images/twitter.png" alt="logo de twitter">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
