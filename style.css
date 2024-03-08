@@ -114,7 +114,6 @@ body {
   font-size: 2.4rem;
   color: #eee;
   font-weight: 400;
-
   line-height: 1.4;
   letter-spacing: 0.1rem;
   margin-bottom: 3.2rem;
@@ -139,9 +138,56 @@ body {
   background-color: #623b95e2;
 }
 
+.hero-img-box {
+  position: relative;
+  background-color: transparent;
+}
+
+.hero-img-box::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  bottom: 0;
+  right: 0;
+  transform: translate(-90%, 10%);
+  border-right: 1px solid #a5b4fc;
+  border-bottom: 1px solid #a5b4fc;
+  /* background-color: #a5b4fc; */
+}
+
 .hero-img {
   width: 90%;
 }
+
+/* Hero animation */
+/* 
+[data-revealed="left"] {
+  transform: translateX(-100%);
+  transition: transform 1s ease-out;
+}
+
+[data-revealed="left"].revealed {
+  transform: translateX(0);
+}
+
+[data-revealed="right"] {
+  transform: translateX(100%);
+  transition: transform 1s ease-out;
+}
+
+[data-revealed="right"].revealed {
+  transform: translateX(0);
+}
+
+[data-revealed="bottom"] {
+  transform: translateY(20%);
+  transition: transform 1s ease-out;
+}
+
+[data-revealed="bottom"].revealed {
+  transform: translateX(0);
+} */
 
 /* Gallery Section */
 
@@ -318,7 +364,7 @@ body {
 .description-box {
   width: 60rem;
   margin: 0 auto;
-  padding: 3.2rem 0 3.2rem 2rem;
+  padding: 3.2rem 2.4rem 3.2rem 2rem;
   position: relative;
   background-color: #02022c;
 }
@@ -334,6 +380,12 @@ body {
   font-size: 2.2rem;
   color: #fff;
   margin-bottom: 2.4rem;
+}
+
+.description-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .description-list li {
@@ -356,4 +408,125 @@ body {
 
 .about-section .btn {
   margin-top: 3.2rem;
+}
+
+/* |-----------------------------------| 
+          PORTFOLIO STYLING
+   |-----------------------------------| */
+
+.sub-header {
+  padding: 9.6rem 0;
+  background-color: #1f2039;
+}
+
+.sub-header .heading-secondary {
+  text-align: start;
+  color: #a5b4fc;
+  margin-bottom: 0;
+}
+
+.portfolio-container {
+  padding: 4.8rem 0;
+}
+
+.portfolio-container .heading-secondary {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #000;
+  text-align: start;
+  margin-bottom: 4.8rem;
+}
+
+/* |-----------------------------------| 
+          TARIF STYLING
+   |-----------------------------------| */
+
+.tarif {
+  padding-block: 9.6rem;
+  background-color: #02022c;
+}
+
+.tarif .heading-secondary {
+  text-align: start;
+  color: #a5b4fc;
+}
+
+.tarif .container {
+  position: relative;
+}
+
+.tarif .btn {
+  position: absolute;
+  top: 13%;
+  right: 0;
+}
+
+.tarif-elt-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  padding: 4.8rem 0;
+  text-align: left;
+  margin-top: 9.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #a5b4fc;
+  margin-block-end: 2rem;
+}
+
+.tarif-item {
+  padding: 3.2rem 3.2rem 3.2rem 0;
+  border-right: 1px solid #a5b4fc;
+  border-bottom: 1px solid #a5b4fc;
+}
+
+.tarif-text {
+  font-size: 1.5rem;
+  color: #eee;
+  line-height: 1.5;
+  margin-block-end: 1.5rem;
+}
+
+.tarif-horaire {
+  font-size: 1.5rem;
+  color: #a5b4fc;
+  font-weight: 500;
+  margin-block-end: 1.2rem;
+}
+
+.minimal-text {
+  font-size: 1.3rem;
+  color: #eee;
+}
+
+.table-heading {
+  font-size: 1.8rem;
+  color: #a5b4fc;
+  margin-bottom: 2.8rem;
+}
+
+table {
+  width: 120rem;
+  margin-inline: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: 1.6rem;
+  color: #eee;
+  padding-inline: 3.2rem;
+  padding-block: 2rem;
+  border: 2px solid #a5b4fc;
+}
+
+td {
+  padding: 2rem 1.8rem;
+  text-align: center;
+  color: #eee;
+  border: 2px solid #a5b4fc;
 }
