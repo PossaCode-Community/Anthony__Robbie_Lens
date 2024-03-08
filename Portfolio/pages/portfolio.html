@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <Header class="header">
+        <img src="../images/logo.png" alt="Logo du site" class="logo">
+        <nav class="nav-link">
+            <ul class="nav-list">
+                <li><a href="../index.html" class="main-nav-link">Acceuil</a></li>
+                <li><a href="apropos.html" class="main-nav-link">A propos</a></li>
+                <li><a href="tarif.html" class="main-nav-link">Tarifs</a></li>
+                <li><a href="portfolio.html" class="main-nav-link">Portfolio</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <div class="sub-header">
+        <div class="container">
+            <h1 class="heading-secondary" data-aos="fade-left">Portfolio</h1>
+        </div>
+    </div>
+    <section class="container portfolio-container">
+        <h2 class="heading-secondary" data-aos="fade-left">Paysages</h2>
+        <div class="gallery grid grid--3-cols">
+            <figure class="gallery-item" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                <img src="../images/accueil/element-1.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <img src="../images/accueil/element-2.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                <img src="../images/accueil/element-3.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                <img src="../images/accueil/element-4.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <img src="../images/accueil/element-5.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                <img src="../images/accueil/element-6.png" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+        </div>
+
+        <h3 class="heading-secondary">Portraits</h3>
+        <div class="gallery grid grid--3-cols">
+            <figure class="gallery-item" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                <img src="../images/portfolio/portrait1.jpg" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <img src="../images/portfolio/portrait2.jpg" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                <img src="../images/portfolio/portrait3.jpg" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                <img src="../images/portfolio/portrait4.jpg" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <img src="../images/portfolio/portrait7.jpg" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+            <figure class="gallery-item" data-aos="fade-left" data-aos-easing="ease-in-sine">
+                <img src="../images/portfolio/portrait6.jpg" alt="">
+                <div class="overlay">
+                    <span class="overlay-text">Voir la photo</span>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="../images/logo.png" alt="Logo du site" class="logo">
+        <div class="social">
+            <img src="../images/instagram.png" alt="logo de instagram">
+            <img src="../images/twitter.png" alt="logo de twitter">
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 800, // values from 0 to 3000, with step 50ms
+            easing: 'ease-out', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+
+        });
+    </script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
